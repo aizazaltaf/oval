@@ -1,0 +1,6 @@
+projectKey=Irvinei-App-development-2.0
+serverUrl=https://sonarqube-server.irvinei.com
+serverVersion=10.7.0.96327
+dashboardUrl=https://sonarqube-server.irvinei.com/dashboard?id=Irvinei-App-development-2.0
+ceTaskId=9768677d-cde4-470c-b584-ec418eed3749
+ceTaskUrl=https://sonarqube-server.irvinei.com/api/ce/task?id=9768677d-cde4-470c-b584-ec418eed3749

@@ -1,0 +1,44 @@
+app:
+  android:
+    flavorDimensions: "environment"
+
+flavors:
+  develop:
+    app:
+      name: "Oval Dev"
+
+    android:
+      applicationId: "com.irveni.admin.develop"
+    ios:
+      bundleId: "ios.irvinei.client.develop"
+
+  test:
+    app:
+      name: "Oval Test"
+
+    android:
+      applicationId: "com.irveni.admin.test"
+    ios:
+      bundleId: "ios.irvinei.client.staging"
+
+  uat:
+    app:
+      name: "Oval Uat"
+
+    android:
+      applicationId: "com.irveni.admin.uat"
+    ios:
+      bundleId: "ios.irvinei.client.uat"
+
+
+  preprod:
+    app:
+      name: "Oval"
+
+    android:
+      applicationId: "com.irveni.admin"
+    ios:
+      bundleId: "ios.irvinei.client"
+
+
+ide: idea

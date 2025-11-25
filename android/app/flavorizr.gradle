@@ -1,0 +1,30 @@
+android {
+    flavorDimensions "environment"
+
+    productFlavors {
+        develop {
+            dimension "environment"
+            applicationId "com.irveni.admin.develop"
+            resValue "string", "app_name", "Oval Dev"
+            buildConfigField "String", "DART_ENV", '"develop"'
+        }
+        staging {
+            dimension "environment"
+            applicationId "com.irveni.admin.test"
+            resValue "string", "app_name", "Oval Test"
+            buildConfigField "String", "DART_ENV", '"test"'
+        }
+        uat {
+            dimension "environment"
+            applicationId "com.irveni.admin.uat"
+            resValue "string", "app_name", "Oval UAT"
+            buildConfigField "String", "DART_ENV", '"uat"'
+        }
+        preprod {
+            dimension "environment"
+            applicationId "com.irveni.admin"
+            resValue "string", "app_name", "Oval"
+            buildConfigField "String", "DART_ENV", '"preprod"'
+        }
+    }
+}

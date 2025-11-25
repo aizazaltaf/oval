@@ -1,0 +1,33 @@
+screenshot: flutter screenshot -o ~/Downloads/flutter.png
+
+object-box-admin: adb forward tcp:8090 tcp:8090
+
+generate-code:
+  build: dart run build_runner build
+  watch: dart run build_runner watch
+  rebuild: dart run build_runner build --delete-conflicting-outputs
+  delete: find . -maxdepth 20 -type f \( -name "*.inject.summary" -o -name "*.inject.dart" -o  -name "*.g.dart" \) -delete
+  svg: dart run vector_graphics_compiler --input-dir assets/images
+
+git:
+  delete:
+    (execution): once
+    (scripts):
+      - read -p 'Are you sure you want to delete all ignored directories and files? y/n:' yn
+      - '[[ $yn == "y" ]] && git clean -dfX'
+
+build:
+  android: |
+    read -p 'Enter Environment (production/qa):' dartEnv &&
+    cd android &&
+    bundle update fastlane &&
+    bundle install &&
+    bundle exec fastlane build dartEnv:$dartEnv &&
+    bundle exec fastlane deploy dartEnv:$dartEnv
+  ios: |
+    read -p 'Enter Environment (production/qa):' dartEnv &&
+    cd ios &&
+    bundle update fastlane &&
+    bundle install &&
+    bundle exec fastlane build dartEnv:$dartEnv &&
+    bundle exec fastlane deploy dartEnv:$dartEnv

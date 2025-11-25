@@ -1,0 +1,7 @@
+#include? "Pods/Target Support Files/Pods-Runner/Pods-Runner.debug-oval-develop.xcconfig"
+
+PRODUCT_BUNDLE_IDENTIFIER = ios.irvinei.client.develop
+PRODUCT_NAME = Oval Dev
+DISPLAY_NAME = Oval Dev
+DART_ENV = develop
+FLUTTER_BUILD_MODE = debug

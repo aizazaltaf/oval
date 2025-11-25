@@ -1,0 +1,90 @@
+# This file configures the analyzer, which statically analyzes Dart code to
+# check for errors, warnings, and lints.
+#
+# The issues identified by the analyzer are surfaced in the UI of Dart-enabled
+# IDEs (https://dart.dev/tools#ides-and-editors). The analyzer can also be
+# invoked from the command line by running `flutter analyze`.
+
+# The following line activates a set of recommended lints for Flutter apps,
+# packages, and plugins designed to encourage good coding practices.
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  errors:
+    unused_local_variable: warning
+    must_be_immutable: ignore
+
+linter:
+  rules:
+    - prefer_double_quotes: false
+    - always_put_control_body_on_new_line
+    - unawaited_futures
+    - avoid_redundant_argument_values
+    - avoid_classes_with_only_static_members
+    - prefer_int_literals
+    - sort_constructors_first
+    - always_use_package_imports
+    - always_use_package_imports
+    - sort_unnamed_constructors_first
+    - cascade_invocations
+    - require_trailing_commas
+    - always_declare_return_types
+    - cast_nullable_to_non_nullable
+    - prefer_final_locals
+    - prefer_final_in_for_each
+    - avoid_void_async
+    - unnecessary_breaks
+    - unnecessary_lambdas
+    - unnecessary_await_in_return
+    - prefer_const_declarations
+    - join_return_with_assignment
+    - avoid_types_on_closure_parameters
+    - prefer_constructors_over_static_methods
+    - noop_primitive_operations
+    - unnecessary_parenthesis
+    - no_literal_bool_comparisons
+    - avoid_multiple_declarations_per_line
+    - prefer_if_elements_to_conditional_expressions
+    - use_named_constants
+    - prefer_const_literals_to_create_immutables
+    - unnecessary_null_checks
+    - use_decorated_box
+    - use_colored_box
+    - parameter_assignments
+    - unreachable_from_main
+    - directives_ordering
+    - use_setters_to_change_properties
+    - unnecessary_statements
+    #    - always_specify_types
+#    - avoid_classes_with_only_static_members
+    - avoid_print
+    - prefer_const_constructors
+    - close_sinks
+dart_code_metrics:
+  metrics:
+    cyclomatic-complexity: 10
+#    lines-of-code: 50
+#    number-of-parameters: 4
+    maximum-nesting-level: 5
+  rules:
+    - prefer-trailing-comma
+    - avoid-unused-parameters
+    - no-boolean-literal-compare
+
+#linter:
+  # The lint rules applied to this project can be customized in the
+  # section below to disable rules from the `package:flutter_lints/flutter.yaml`
+  # included above or to enable additional rules. A list of all available lints
+  # and their documentation is published at https://dart.dev/lints.
+  #
+  # Instead of disabling a lint rule for the entire project in the
+  # section below, it can also be suppressed for a single line of code
+  # or a specific dart file by using the `// ignore: name_of_lint` and
+  # `// ignore_for_file: name_of_lint` syntax on the line or in the file
+  # producing the lint.
+#  rules:
+    # avoid_print: false  # Uncomment to disable the `avoid_print` rule
+    # prefer_single_quotes: true  # Uncomment to enable the `prefer_single_quotes` rule
+
+# Additional information about this file can be found at
+# https://dart.dev/guides/language/analysis-options
