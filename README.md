@@ -162,13 +162,7 @@ Unauthorized access detection, surveillance
 [![Play Store](https://img.shields.io/badge/Play_Store-414141?logo=googleplay&logoColor=white)](https://play.google.com/store/apps/details?id=com.irveni.admin)  
 [![App Store](https://img.shields.io/badge/App_Store-0D96F6?logo=appstore&logoColor=white)](https://apps.apple.com/ca/app/irvinei-oval-ai-doorbell-hub/id6451442250)
 
----
 
-# 📞 Support
-
-For business inquiries, demos, or integration:  
-📧 support@irvinei.com  
-🌐 https://irvinei.com
 
 ---
 
